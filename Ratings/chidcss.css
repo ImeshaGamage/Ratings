@@ -1,0 +1,119 @@
+body {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url(../img/pic10.jpg);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+     
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 80px;
+    padding: -5px 0px;
+    background-color: rgb(226, 225, 216);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+header .logo{
+    float: left;
+    justify-items: left;
+    width: 70px;
+    height: 70px;
+}
+.children{
+    margin-top: 100px;
+}
+.Tname{
+    color: rgb(69, 7, 16);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    margin-left: -500px;
+    color: rgb(17, 17, 51);
+    font-family: cursive;
+    font-size: 30px;
+}
+.navigation a{
+    right: 5px;
+    margin-right: 40px;
+    position: relative;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+   }
+
+.navigation ::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 70px;
+    height: 3px;
+    background-color: rgb(4, 56, 111);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: tranform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+
+}
+label{
+    color: rgb(7, 7, 7);
+    font-family: cursive;
+    font-size: 25px;
+}
+input{
+    color: black;
+    font-size: 20px;
+    font-family: cursive;
+}
+.radio-button{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(5, 37, 61);
+}
+.children .name{
+    font-family: 'Times New Roman', Times, serif;
+    color: bisque;
+}
+button{
+    background-color: indianred;
+    border-radius: 5px;
+    width: 400px;
+    height: 50px;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+}
+select{
+    color: black;
+    font-size: 20px;
+    font-family: cursive;
+}
+fieldset{
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
